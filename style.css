@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+
 img{
     width: 100%;
 }
 
 body{
     background-color: rgb(139, 185, 192);
+    font-family: 'Tapestry', cursive;
 }
 
 main{
