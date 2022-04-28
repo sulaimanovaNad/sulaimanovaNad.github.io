@@ -1,37 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style/style.css">
     <title>Document</title>
 </head>
+
 <body>
+    <header>
+        <a name="header"><div class="box" style="margin-top: 50px;"></a>
+            <div class="nav">
+                <a href="#header">HOME</a>
+                <a href="#main">MY PROJECTS</a>
+                <a href="#footer">MY CONTACTS</a>
+
+            </div>
+            <div class="header-box">
+                <div class="title-text">
+                    <h1 class="name">NADIRA</h1>
+                    <p class="text">My portfolio</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <main>
         <div class="box">
-            <div class="text">
-                <p>Last Name : Sulaimanova</p>
-                <p>
-                    Name : Nadira
-                </p>
-                <p>
-                    Age : 21
-                </p>
-                <p>
-                    Front-End developer
-                </p>
+            <div class="h3-text">
+                <a name="main"><h3>MY PROJECTS</h3></a>
             </div>
-            <div class="photo">
-                <img src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png" alt="">
+            <div class="slider">
+                <div class="slider-card">
+                    <img src="./image/first.png" alt="">
+                </div>
+                <div class="slider-card">
+                    <img src="./image/second.png" alt="">
+                </div>
+                <div class="slider-card">
+                    <img src="./image/third.png" alt="">
+                </div>
+                <div class="slider-card">
+                    <img src="./image/fourth.png" alt="">
+                </div>
             </div>
-        </div>
-
-        <div>
-            <p>
-                My project's
-            </p>
         </div>
     </main>
+
+    <footer>
+        <div class="box">
+           <div class="row">
+            <div class="con-box first-box">
+                <div class="h3-text">
+                    <a name="footer"><h3>CONTACTS</h3></a>
+                </div>
+                <img class="my-photo" src="./image/userphoto.jpg" alt="">
+                <p class="bold">Gmail</p>
+                <p>nadira18.sulaimanova@gmail.com</p>
+            </div>
+            <div class="con-box second-box">
+                <div class="h3-text">
+                    <h3>SEND ME MESSAGE</h3>
+                </div>
+             <form action="https://formspree.io/f/mnqwobjn" method="POST">
+                 <div>
+                    <label>Your email:</label>
+                    <input type="email" name="email" autocomplete="off">
+                 </div>
+                 <div style="margin-top:20px">
+                    <label>Your message:</label>
+                    <textarea name="message"></textarea>
+                 </div>
+                 <div class="button">
+                    <button type="submit">Send</button>
+                 </div>
+             </form>
+           </div>
+           </div>
+        </div>
+    </footer>
+
+
+    <script src="./js/script.js"></script>
 </body>
+
 </html>
